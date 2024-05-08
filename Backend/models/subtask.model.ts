@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 
-
 const subtaskSchema = new mongoose.Schema({
     title: { type: String, required: true },
     isCompleted: { type: Boolean, required: true },
@@ -11,4 +10,4 @@ const subtaskSchema = new mongoose.Schema({
 
 const SubtaskModel = mongoose.model('SubTask', subtaskSchema);
 
-export default SubtaskModel; 
+export default SubtaskModel;

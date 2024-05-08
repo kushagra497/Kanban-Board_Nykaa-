@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kanban.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="cont">
+        <div class="sidebar">
+            <h1>Kanban</h1>
+            <div class="sidenav">
+                <h4>ALL BOARDS</h4>
+                <div id="boardContainer" class="boardContainer">
+                    <!-- <div class="selected">
+                        Board1
+                    </div>
+                    <div>
+                        Board2
+                    </div>
+                    <div>
+                        Board3
+                    </div>
+                    <div>
+                        Board4
+                    </div> -->
+                </div>
+                <button id="createBoardBtn" class="createBoardBtn">+ Create New Board</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="aboutBoard">
+                <h2 id="boardName"></h2>
+                <button>+ Add a Task</button>
+
+            </div>
+            <div class="task">
+                <div class="todo">
+                    <h3>Todo</h3>
+                    <div class="todoContainer">
+                        <!-- <div class="todoItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="todoItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="todoItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="todoItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="todoItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="doing">
+                    <h3>Doing</h3>
+                    <div class="doingContainer">
+                        <!-- <div class="doItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="doItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="doItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="doItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="doItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="done">
+                    <h3>Done</h3>
+                    <div class="doneContainer">
+                        <!-- <div class="doneItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="doneItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="doneItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="doneItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div>
+                        <div class="doneItem">
+                            <h3>Do something</h3>
+                            <div>List of sub-task</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="createboard" class="createboard hid">
+            <div class="dialog">
+                <h3 id="closeBoard">X</h3>
+                <h1>Enter the Board Details</h1>
+                <div class="form">
+                    <input type="text" id="boardNameInput" placeholder="Enter the boardname">
+                    <button id="createBoardInputBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="kanban.js"></script>
+</body>
+
+</html>

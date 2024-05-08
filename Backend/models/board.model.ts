@@ -1,12 +1,9 @@
 import mongoose from 'mongoose';
 
-
-
 const boardSchema = new mongoose.Schema({
-    name: { type: String, unique: true, required: true },
+    name: { type: String, required: true, unique: true },
     userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
-    tasks: [{ type: mongoose.Schema.Types.ObjectId, ref: "Task" }],
-    boardId: { type: mongoose.Schema.Types.ObjectId, ref: "Board" }
+    tasks:[{type: mongoose.Schema.Types.ObjectId, ref: "Task"}]
 }, {
     versionKey: false
 })
